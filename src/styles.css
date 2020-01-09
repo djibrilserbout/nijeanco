@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Questrial', sans-serif;
+    background:rgb(253, 242, 229);
+
+}
+button {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+
+main {
+    margin-bottom:100px;
+}
+a {
+    text-decoration:none;
+}
+.strong {
+    font-weight: bold;
+}

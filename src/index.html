@@ -6,8 +6,26 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
   <app-root></app-root>
 </body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+<script>window.onload = function() {
+lax.setup({
+    breakpoints: { small: 0, large: 992 }
+})
+	const updateLax = () => {
+		lax.update(window.scrollY)
+		window.requestAnimationFrame(updateLax)
+	}
+
+	window.requestAnimationFrame(updateLax)
+}</script>
+
 </html>
